@@ -16,11 +16,9 @@ class SwitchArrayElements
     smallest_number1 = arr.min
     arr_without_number1 = arr - [smallest_number1]
     smallest_number2 = arr_without_number1.min
-    puts '******* Smallest numbers *******'
-    puts "Sum of first smallest numbers: #{smallest_number1 + smallest_number2}"
+    # Sum of smallest numbers from array
+    return smallest_number1 + smallest_number2
   end
-
-  private
 
   def swap_elements(arr, a, b)
     arr[a], arr[b] = arr[b], arr[a]
